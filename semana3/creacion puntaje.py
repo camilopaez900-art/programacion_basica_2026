@@ -6,6 +6,10 @@
 
 # PSEUDOCADIGO
 #   INICIO
+# leer primer puntaje 
+# leer segundo puntaje 
+# escribir si nprimer puntaje > segundo puntaje 
+
 
 
 puntaje1 = int(input("ingrese el primer numero:"))
