@@ -1,0 +1,22 @@
+#Validador de Triángulo 
+# algoritmo
+
+# primero toca leer los lados A, B y C
+# luego verificar la desigualdad triangular Si (A + B > C) y (A + C > B) y (B + C > A) entonces si seria trangular
+# y si esto no se cumple mostrar que no forman un triangulo 
+# y si si se cumple A == B y B == C → Equilátero, Sino si A == B o A == C o B == C → Isósceles, Sino → Escaleno
+# al final mostrar el resultado 
+
+A = float(input("Ingrese lado A: "))
+B = float(input("Ingrese lado B: "))
+C = float(input("Ingrese lado C: "))
+
+if (A + B > C) and (A + C > B) and (B + C > A):
+    if A == B and B == C:
+        print("Triángulo Equilátero")
+    elif A == B or A == C or B == C:
+        print("Triángulo Isósceles")
+    else:
+        print("Triángulo Escaleno")
+else:
+    print("Error: estos valores no forman un triángulo")
