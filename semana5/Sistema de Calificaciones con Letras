@@ -1,0 +1,36 @@
+#Sistema de Calificaciones con Letras 
+#algoritmo
+
+#Leer la nota de (0.0 a 5.0)
+#Validar si la nota está en el rango válido y si no mostrar un error
+#Si está en el rango: Si nota >= 4.5 → A (Excelente), Sino si nota >= 4.0 → B (Sobresaliente), Sino si nota >= 3.5 → C (Bueno), Sino si nota >= 3.0 → D (Aceptable), Sino → E (Reprobado)
+#Si la nota es >= 3.0 → “Aprobado”, si no → “Reprobado”
+#Si la nota queda entre 2.0 y 2.9 → mostrar habilitación
+#y por ultimo mostrtar el resultado
+
+nota = float(input("Ingrese la nota (0.0 a 5.0): "))
+
+if nota < 0 or nota > 5:
+    print("Error: nota inválida")
+else:
+    if nota >= 4.5:
+        letra = "A"
+    elif nota >= 4.0:
+        letra = "B"
+    elif nota >= 3.5:
+        letra = "C"
+    elif nota >= 3.0:
+        letra = "D"
+    else:
+        letra = "E"
+
+    if nota >= 3.0:
+        estado = "Aprobado"
+    else:
+        estado = "Reprobado"
+
+    print("Letra:", letra)
+    print("Estado:", estado)
+
+    if 2.0 <= nota <= 2.9:
+        print("Puede presentar habilitación")
