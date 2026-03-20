@@ -1,0 +1,21 @@
+#Clasificador de Temperatura 
+#algoritmo
+#Leer la temperatura
+#Si temperatura < 5 → "MUY FRÍO"
+#Sino si temperatura < 15 → "FRÍO"
+#Sino si temperatura < 25 → "TEMPLADO"
+#Sino si temperatura < 35 → "CALIENTE"
+#Sino → "MUY CALIENTE"
+
+temp = int(input("Ingrese la temperatura en °C: "))
+
+if temp < 5:
+    print("Categoría: MUY FRIO")
+elif temp < 15:
+    print("Categoría: FRIO")
+elif temp < 25:
+    print("Categoría: TEMPLADO")
+elif temp < 35:
+    print("Categoría: CALIENTE")
+else:
+    print("Categoría: MUY CALIENTE")
