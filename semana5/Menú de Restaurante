@@ -1,0 +1,22 @@
+#Menú de Restaurante 
+#mostrar menu del restaurante 
+#Si opción == 1 → mostrar Bandeja Paisa y precio
+#Sino si opción == 2 → mostrar Ajiaco y precio
+#Sino si opción == 3 → mostrar Sancocho y precio
+#Sino → mostrar "Opción no válida"
+
+print("MENÚ")
+print("1. Bandeja Paisa ($18.000)")
+print("2. Ajiaco ($15.000)")
+print("3. Sancocho ($12.000)")
+
+opcion = int(input("Ingrese una opción: "))
+
+if opcion == 1:
+    print("Elegiste Bandeja Paisa y su  Precio es de: $18.000")
+elif opcion == 2:
+    print("Elegiste Ajiaco y su  Precio es de: $15.000")
+elif opcion == 3:
+    print("Elegiste Sancocho y su  Precio es de: $12.000")
+else:
+    print("Opción no es válida, intenta de nuevo")
