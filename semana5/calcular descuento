@@ -1,0 +1,17 @@
+#Calculadora de Descuento 
+# algoritmo
+#pedir el valor de la compra 
+#verficar si si es mayor a 1000000
+# si lo es aplicafr el 15% de descuento 
+# si no se paga el valor completo de la compra
+# mostrar el total de la compra 
+
+compra = float(input("Ingrese el valor de la compra: "))
+
+if compra > 100000:
+    descuento = compra * 0.15
+    total = compra - descuento
+else:
+    total = compra
+
+print("El total a pagar es:", total)
