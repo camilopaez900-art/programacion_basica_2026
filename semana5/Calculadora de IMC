@@ -1,0 +1,31 @@
+#Calculadora de IMC 
+#algoritmo
+
+#Leer peso en kg
+#Leer su altura en metros
+#luego se Calcula el IMC = peso / (altura²)
+#y si IMC < 18.5 → "Bajo peso"
+#Sino si IMC < 25 → "Normal"
+#Sino si IMC < 30 → "Sobrepeso"
+#Sino  "Obesidad"
+#luego Mostrar el IMC con 2 decimales
+#y por ultimo Mostrar categoría
+
+peso = float(input("Ingrese su peso (kg): "))
+altura = float(input("Ingrese su altura (m): "))
+
+imc = peso / (altura ** 2)
+
+if imc < 18.5:
+    categoria = "Bajo peso"
+elif imc < 25:
+    categoria = "Normal"
+elif imc < 30:
+    categoria = "Sobrepeso"
+else:
+    categoria = "Obesidad"
+
+print("IMC: {:.2f}".format(imc))
+print("Categoría:", categoria)
+
+
