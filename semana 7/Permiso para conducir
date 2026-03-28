@@ -1,0 +1,9 @@
+#Permiso para conducir 
+edad=int(input("ingresa tu edad:") )
+
+permiso= input("tienes licensia vigennte (si/no):")
+
+if edad >= 18 and permiso=="si":
+    print("Puedes conducir. Maneja con cuidado")   
+else:
+    print ("no puedes conducir")     
