@@ -1,0 +1,10 @@
+#Acceso al sistema
+
+usuario= input("nombre de usuario:")
+contraseña= int(input("ingresa tu contraseña:"))
+
+if usuario == "admin" and contraseña == 1234:
+    print ("Acceso concedido. Bienveni")
+    print ("Cargando tu perfil...")
+else:
+    print ( "Acceso denegado. Datos incorrectos")    
