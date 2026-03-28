@@ -1,0 +1,11 @@
+#Descuento en tienda  
+
+estudiante= input("eres estudiante?(si/no):")
+compra= int(input("total de compra en pesos es:"))
+
+if estudiante == "si" or compra > 200000: 
+    descuento= compra * 0.15 
+    Compra_total=compra-descuento
+    print ("Descuento aplicado del 15%!" )
+    print ("Descuento:", descuento)
+    print("Total a pagar:",Compra_total)
