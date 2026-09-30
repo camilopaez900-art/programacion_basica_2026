@@ -1,0 +1,66 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package producto;
+
+
+public class Producto {
+    private String nombre;
+    private String categoria;
+    private Double precio;
+    private int cantidadStock;
+
+    public Producto(String nombre, String categoria, Double precio, int cantidadStock) {
+        this.nombre = nombre;
+        this.categoria = categoria;
+        this.precio = precio;
+        this.cantidadStock = cantidadStock;
+    }
+
+    public Producto() {
+    }
+    
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public Double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Double precio) {
+        this.precio = precio;
+    }
+
+    public int getCantidadStock() {
+        return cantidadStock;
+    }
+
+    public void setCantidadStock(int cantidadStock) {
+        this.cantidadStock = cantidadStock;
+    }
+    
+    public String verDetalle (){
+        return "cual es el nombre del producto:"+this.nombre+"que categoria es:"+this.getCategoria()+"su precio es:"+this.precio+"cual es la cantidad:"+this.cantidadStock;
+    }
+    
+    public double calcularDescuento(double porcentaje){
+        return 
+    
+    }
+}
+    
