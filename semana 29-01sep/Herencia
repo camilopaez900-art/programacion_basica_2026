@@ -1,0 +1,76 @@
+package herencia30sep;
+
+public class Herencia30sep {
+
+    
+    public static void main(String[] args) {
+        
+        Animal animal1 = new Animal();
+        animal1.setEspecie("mamifero");
+        System.out.println(animal1);
+        System.out.println(animal1.getEspecie());
+        animal1.comer();
+        animal1.dormir();
+        perro perro1 = new perro();
+        perro1.setEspecie("mamifero");
+        perro1.setRaza("pitbull");
+        perro1.hacer_sonido();
+        perro1.comer();
+        perro1.dormir();
+        
+        
+        
+    }
+
+
+ public String getEspecie() {
+        return especie;
+    }
+
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
+    
+    public void comer(){
+    
+        System.out.println("El animal de especie:"+this.especie+"come todos los dias:");
+        
+    }
+    public void dormir(){
+        System.out.println("el animalesta durmiendo");
+    
+    }
+  
+
+}
+
+package herencia30sep;
+public class perro extends Animal{
+    private String raza;
+    
+    public perro(){
+        
+    }
+
+    public String getRaza() {
+        return raza;
+    }
+
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+        
+    public void hacer_sonido(){
+        System.out.println("El perro hace guau");
+        
+    }
+public class Perro {
+    
+}
+}
+    
+
+
+    
+    
+}
